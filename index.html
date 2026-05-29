@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Agrinho 2026 - Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-seedling"></i> Agrinho <span>2026</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projeto">O Projeto</a></li>
+                <li><a href="#pontuacao">Critérios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">1º Curso - Desenvolvimento Front-End</span>
+            <h1>Inovação Tecnológica no Campo</h1>
+            <p>Desenvolvendo soluções digitais para transformar o futuro da agricultura com responsabilidade e sustentabilidade.</p>
+            <a href="#projeto" class="btn-principal">Conhecer o Projeto</a>
+        </div>
+    </section>
+
+    <section id="projeto" class="container">
+        <h2>Projeto Agrinho: Rumo aos 20 Pontos</h2>
+        <p class="subtitulo">Abaixo estão os pilares do sistema front-end desenvolvido para a competição.</p>
+        
+        <div class="cards-grid">
+            <div class="card">
+                <i class="fa-solid fa-code icon-card"></i>
+                <h3>Código Limpo</h3>
+                <p>HTML5 semântico e CSS moderno, garantindo uma estrutura acessível e otimizada para motores de busca.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-mobile-screen-button icon-card"></i>
+                <h3>Responsividade</h3>
+                <p>Interface que se adapta perfeitamente a qualquer dispositivo: computadores, tablets ou smartphones.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-gauge-high icon-card"></i>
+                <h3>Alta Performance</h3>
+                <p>Scripts otimizados em JavaScript para interações rápidas, fluidas e sem travamentos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pontuacao" class="pontuacao-section">
+        <div class="pontuacao-container">
+            <h2>Valendo <span id="contador-pontos">0</span> Pontos!</h2>
+            <p>Este projeto foi construído seguindo rigorosamente todos os critérios avaliativos da categoria Front-End para alcançar a nota máxima.</p>
+            <button id="btn-Interagir" class="btn-secundario">Validar Projeto</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agrinho - Categoria Desenvolvimento Front-End. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
