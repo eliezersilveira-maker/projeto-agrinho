@@ -1,1 +1,218 @@
+/* Configurações Globais e Variáveis */
+:root {
+    --cor-primaria: #28a745;
+    --cor-primaria-escura: #1e7e34;
+    --cor-fundo: #f8f9fa;
+    --cor-texto-escuro: #212529;
+    --cor-texto-claro: #ffffff;
+    --transicao: all 0.3s ease;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-escuro);
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-texto-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-texto-escuro);
+}
+
+.logo i {
+    color: var(--cor-primaria);
+}
+
+.logo span {
+    color: var(--cor-primaria);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto-escuro);
+    font-weight: 500;
+    transition: var(--transicao);
+}
+
+nav ul li a:hover {
+    color: var(--cor-primaria);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor-texto-claro);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    opacity: 0.9;
+}
+
+.badge {
+    background-color: var(--cor-primaria);
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: var(--transicao);
+}
+
+.btn-principal:hover {
+    background-color: var(--cor-primaria-escura);
+    transform: translateY(-2px);
+}
+
+/* Seções Gerais */
+.container {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+/* Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--cor-texto-claro);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: var(--transicao);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.icon-card {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* Seção de Pontuação */
+.pontuacao-section {
+    background-color: #e9ecef;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.pontuacao-container h2 {
+    font-size: 2.5rem;
+    color: var(--cor-texto-escuro);
+    margin-bottom: 15px;
+}
+
+#contador-pontos {
+    color: var(--cor-primaria);
+    font-weight: 800;
+}
+
+.btn-secundario {
+    background-color: var(--cor-texto-escuro);
+    color: var(--cor-texto-claro);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: var(--transicao);
+}
+
+.btn-secundario:hover {
+    background-color: #000;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-texto-escuro);
+    color: #adb5bd;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
